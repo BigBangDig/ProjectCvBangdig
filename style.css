@@ -1,0 +1,133 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font family untuk teks */
+    background-color: #f8f9fa; /* Warna latar belakang body */
+    color: #343a40; /* Warna teks */
+    margin-top: 56px; /* Tinggi navbar */
+}
+
+.content {
+    padding-top: 20px; /* Padding atas konten */
+}
+
+.navbar {
+    background-color: rgba(0,0,0,0.7); /* Transparansi background navbar */
+}
+
+.sidebar {
+    background-color: #343a40; /* Warna sidebar */
+    padding-top: 20px; /* Padding atas untuk sidebar-sticky */
+}
+
+.sidebar-sticky {
+    padding-top: 20px;
+}
+
+.nav-link {
+    color: #adb5bd; /* Warna default link */
+}
+
+.nav-link:hover {
+    color: #ffffff; /* Warna link saat hover */
+}
+
+.background-image {
+    position: relative;
+    background-image: url('./images/hume.png'); /* Gambar latar belakang */
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 56px); /* Mengisi tinggi viewport dikurangi tinggi navbar */
+    width: 100%; /* Mengisi lebar viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden; /* Menyembunyikan gambar latar belakang yang berlebihan */
+}
+
+
+
+.hero-content {
+    position: relative;
+    z-index: 1; /* Agar konten berada di atas overlay */
+    text-align: center;
+    color: #ffffff; /* Warna teks putih untuk kontras */
+    padding: 0 20px; /* Jarak padding untuk konten */
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+
+.dark-mode {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+}
+
+.dark-mode .sidebar {
+    background-color: #1a252f;
+}
+
+.dark-mode .navbar-dark .navbar-nav .nav-link {
+    color: #ecf0f1 !important;
+}
+
+.dark-mode .btn-primary {
+    background-color: #2980b9;
+    border-color: #2980b9;
+}
+
+.dark-mode .background-image .text-center {
+    color: #ecf0f1;
+}
+.dark-mode p {
+    color: #006aff; /* Ubah sesuai keinginan Anda, misalnya putih */
+}
+.dark-mode .card-title,
+.dark-mode .card-text {
+    color: #3498db; /* Ubah sesuai dengan warna biru muda yang Anda inginkan */
+}
+.custom-card {
+    text-decoration: none;
+    color: inherit;
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100px;
+    height: 100px;
+    display: block;
+}
+
+.custom-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.custom-card .card-body {
+    padding: 10px; /* Adjusted for smaller card */
+}
+
+.custom-card .logo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px; /* Adjusted for smaller card */
+}
+
+.custom-card .card-title {
+    font-size: 1rem; /* Adjusted for smaller card */
+    font-weight: bold;
+    margin-bottom: 5px; /* Adjusted for smaller card */
+}
+
+.custom-card .card-text {
+    font-size: 0.75rem; /* Adjusted for smaller card */
+    color: #555;
+}
